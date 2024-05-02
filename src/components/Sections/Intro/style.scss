@@ -1,0 +1,212 @@
+#intro {
+    & .wrapper {
+        margin-top: 72px;
+        padding-top: 138px;
+        padding-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        & .text {
+            display: flex;
+            flex-direction: column;
+
+            & .top {
+                margin-bottom: 120px;
+
+                & h2 {
+                    max-width: 580px;
+                    color: #68BC6E;
+                    font-family: "Unbounded Bold";
+                    font-size: 64px;
+                    font-weight: 700;
+                    line-height: 72px;
+                    text-align: left;
+                    margin-bottom: 32px;
+                }
+
+                & p {
+                    max-width: 300px;
+                    color: #676d83;
+                    font-family: "SF Pro Display Regular";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                }
+            }
+
+            & .bottom {
+                display: flex;
+                align-items: center;
+                column-gap: 4px;
+
+                & .btn_t {
+                    & button {
+                        width: 218px;
+                        height: 48px;
+                        display: grid;
+                        place-content: center;
+                        border-radius: 62px;
+                        background-color: #68BC6E;
+                        color: #ffffff;
+                        font-family: "Unbounded Semibold";
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: #428546;
+                        }
+
+                        &:active {
+                            background-color: #68bc6ea7;
+                        }
+                    }
+                }
+
+                & .btn_i {
+                    & button {
+                        width: 80px;
+                        height: 48px;
+                        display: grid;
+                        place-content: center;
+                        border: 1px solid #cccccc;
+                        border-radius: 62px;
+                        background-color: #FFFFFF;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            background-color: #cccccc;
+                        }
+
+                        &:active {
+                            background-color: #68bc6e3e;
+                        }
+                    }
+                }
+            }
+        }
+
+        & .image {
+            border-radius: 16px;
+            position: relative;
+
+            & .intro_icon {
+                height: 240px;
+                position: absolute;
+                top: 140px;
+                left: -340px;
+            }
+
+            & .intro_image {
+                width: 674px;
+                height: 540px;
+                border-radius: 16px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #intro {
+        background-image: url(../../../assets/images/disinfection-services.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+
+        & .wrapper {
+            background-color: rgba(0, 0, 0, 0.3);
+            margin-top: 84px;
+            padding: 20px;
+            border-radius: 20px;
+
+            & .text {
+                & .top {
+                    margin-bottom: 40px;
+
+                    & h2 {
+                        color: #FFFFFF;
+                    }
+
+                    & p {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            & .intro_image,
+            .intro_icon {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #intro {
+        & .wrapper {
+            & .text {
+                & .top {
+                    & h2 {
+                        font-size: 48px;
+                        line-height: 64px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #intro {
+        & .wrapper {
+            & .text {
+                & .top {
+                    & h2 {
+                        font-size: 36px;
+                        line-height: 48px;
+                    }
+                }
+
+                & .bottom {
+                    & .btn_t {
+                        & button {
+                            width: 180px;
+                            height: 36px;
+                        }
+                    }
+
+                    & .btn_i {
+                        & button {
+                            width: 60px;
+                            height: 36px;
+
+                            & svg {
+                                scale: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #intro {
+        & .wrapper {
+            & .text {
+                & .top {
+                    & h2 {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

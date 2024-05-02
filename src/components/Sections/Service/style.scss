@@ -1,0 +1,165 @@
+#service {
+    padding: 60px 0;
+
+    & .service_wrapper {
+        & h2 {
+            color: #020c31;
+            font-family: "Unbounded Bold";
+            font-size: 52px;
+            font-weight: 700;
+            line-height: 64px;
+            text-transform: capitalize;
+            margin-bottom: 16px;
+        }
+
+        & .service_text {
+            color: #666666;
+            font-family: "SF Pro Display Regular";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        & .service_card_wrapper {
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+            margin-bottom: 120px;
+        }
+
+        & .service_end {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px;
+            column-gap: 40px;
+            border-radius: 16px;
+            background: rgb(104, 188, 110);
+            background: linear-gradient(270deg, rgba(104, 188, 110, 1) 0%, rgba(185, 255, 190, 1) 100%);
+
+            & .left_img {
+                width: 528px;
+                height: 510px;
+                border-radius: 12px;
+            }
+
+            & .right_end {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                max-width: 645px;
+
+                & .right_top {
+                    margin-bottom: 136px;
+
+                    & h5 {
+                        color: #fafafa;
+                        font-family: "Unbounded Bold";
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 48px;
+                        margin-top: 12px;
+                    }
+                }
+
+                & button {
+                    width: 218px;
+                    height: 48px;
+                    display: grid;
+                    place-content: center;
+                    border-radius: 62px;
+                    background-color: #ffffff;
+                    color: #86cb8a;
+                    font-family: "Unbounded Semibold";
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 22px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    border: 1px solid #ffffff;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #428546;
+                        color: #ffffff;
+                    }
+
+                    &:active {
+                        background-color: #68bc6ea7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #service {
+        & .service_wrapper {
+            & .service_end {
+                flex-direction: column;
+
+                & .left_img {
+                    display: none;
+                }
+
+                & .right_end {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #service {
+        & .service_wrapper {
+            & h2 {
+                font-size: 48px;
+            }
+
+            & .service_end {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #service {
+        padding: 30px 0;
+
+        & .service_wrapper {
+            margin-bottom: 60px;
+
+            & h2 {
+                font-size: 36px;
+                margin-bottom: 0px;
+            }
+
+            & .service_card_wrapper {
+                margin-top: 20px;
+                margin-bottom: 80px;
+            }
+
+            & .service_end {
+                flex-direction: column;
+                padding: 24px;
+
+
+                & .right_end {
+
+                    & .right_top {
+                        margin-bottom: 100px;
+
+                        & h5 {
+                            font-size: 24px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
